@@ -1,0 +1,53 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;  
+    gap: 20px;   
+}
+
+a{
+    font-size: 40px;
+    color: #95a5a6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    border-bottom: 1px solid #52c9aa;
+    transition: color 0.5s ease-out;
+}
+a:hover{
+    color: #7098ff;
+    border-bottom: 5px solid #7098ff;
+}
+i{
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1105px){
+    nav{
+       justify-content: center;
+       align-items: center;
+       gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 810px){
+    nav{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    .wrapper{
+        
+        width: 100vw;
+    }
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 78vw;
+}
